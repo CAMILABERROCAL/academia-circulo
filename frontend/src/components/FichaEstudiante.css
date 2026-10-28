@@ -1,0 +1,181 @@
+.fe-dialogo {
+    width: min(680px, calc(100% - 32px));
+    max-height: calc(100dvh - 40px);
+    margin: auto;
+    padding: 0;
+    overflow-y: auto;
+    border: 1px solid #dfe9f6;
+    border-radius: 20px;
+    background: #fff;
+    color: #253e66;
+    box-shadow: 0 24px 80px #102d5a40;
+}
+
+.fe-dialogo::backdrop {
+    background: #10274780;
+    backdrop-filter: blur(3px);
+}
+
+.fe-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-bottom: 1px solid #e6eef8;
+    background: #f5f9ff;
+}
+
+.fe-antetitulo {
+    margin: 0 0 7px;
+    color: #6685ad;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.fe-cabecera h2 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.fe-cerrar {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dce6f3;
+    border-radius: 50%;
+    background: white;
+    color: #3c669b;
+    font-size: 26px;
+}
+
+.fe-cerrar:hover {
+    background: #eaf3ff;
+}
+
+.fe-contenido {
+    padding: 24px;
+}
+
+.fe-identidad {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.fe-avatar {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 62px;
+    height: 62px;
+    border-radius: 18px;
+    background: #e2efff;
+    color: #2a69bd;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.fe-identidad h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    overflow-wrap: anywhere;
+}
+
+.fe-datos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 0;
+}
+
+.fe-datos>div {
+    padding: 14px;
+    border: 1px solid #e8eff8;
+    border-radius: 10px;
+    background: #fbfdff;
+}
+
+.fe-datos dt {
+    margin-bottom: 6px;
+    color: #7188a5;
+    font-size: 12px;
+}
+
+.fe-datos dd {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.fe-ancho-completo {
+    grid-column: 1 / -1;
+}
+
+.fe-estado {
+    padding: 24px 0;
+    text-align: center;
+    color: #7188a5;
+}
+
+.fe-pie {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    border-top: 1px solid #e6eef8;
+}
+
+@media (max-width: 480px) {
+
+    .fe-cabecera,
+    .fe-contenido {
+        padding: 18px;
+    }
+
+    .fe-datos {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .fe-identidad {
+        align-items: flex-start;
+    }
+}
+
+.fe-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.fe-formulario label {
+    margin-top: 0;
+}
+
+.fe-ayuda {
+    margin: 0 0 18px;
+    color: #7188a5;
+    font-size: 13px;
+}
+
+.fe-pie {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+    .fe-formulario {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fe-acciones {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}

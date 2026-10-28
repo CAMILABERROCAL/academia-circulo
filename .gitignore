@@ -1,0 +1,25 @@
+# Configuración privada
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# Dependencias y compilación
+node_modules/
+target/
+dist/
+build/
+
+# Herramientas y registros
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Copias de la base de datos
+*.dump
+*.backup
+*.bak
